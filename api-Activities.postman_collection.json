@@ -32,6 +32,41 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "post-activities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain; v=1.0"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; v=1.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 456,\r\n    \"title\": \"update form\",\r\n    \"dueDate\": \"2022-06-24T01:27:07.902Z\",\r\n    \"completed\": true\r\n}"
+				},
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Activities",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Activities"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
